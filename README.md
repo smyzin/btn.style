@@ -42,7 +42,7 @@ Include `btnStyle.min.css` in head of your html file and start using bttn CSS cl
 
 ## TODO List
 
- - Add more size classes | **High**
+ - Add more size classes | *High*
  - Add color classes | *Medium*
  - Add more classes | *Medium*
  - Test on older version of the browsers | *Low*
