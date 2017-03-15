@@ -2,7 +2,7 @@
 ***
 Button styles for your projects - webSite.url
 
-### [Demo](http://umount.space/) | [Article](https://medium.com/)
+### [Demo](http://codepen.io/therealnorman/full/evvrqX/) | [Not finished article](#)
 
 [![demo](http://i.imgur.com/YTzuJo0.jpg)](http://i.imgur.com/YTzuJo0.jpg)
 
@@ -22,7 +22,7 @@ Button styles for your projects - webSite.url
 
 #### CDN - [cdnjs](https://cdnjs.com/libraries/)
 ```
-https://cdnjs.com/libraries/bttn.css
+There is no CDN link at this moment
 ```
 
 #### CSS File
@@ -35,9 +35,7 @@ https://cdnjs.com/libraries/bttn.css
 Include `btnStyle.min.css` in head of your html file and start using bttn CSS classes in your button.
 
 ```
-<button class="btn-round btn-md">
-  <i class="icon-menu"></i>
-</button>
+<button class="btn-round btn-md"></button>
 ```
 
 ## TODO List
