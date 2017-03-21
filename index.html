@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Btn.style | Stylus/CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport" content="width=320px, initial-scale=1.0, maximum-scale=1.0, user-scale=0">
+    <link rel="stylesheet" type="text/css" href="public/css/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="public/css/btnStyle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="public/css/materialdesignicons.min.css" media="all" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__title">
+        <div class="title">
+          <div class="title__text">
+            <h1 class="title__text_name">btnStyle</h1>
+            <h3 class="title__text_name">Button's style for your awesome projects</h3>
+          </div>
+          <div class="title__btn">
+            <button class="btn-flash btn-lg btn-no-outline btn-success"><a class="title__btn_git" target="_blank" href="https://github.com/smyzin/btn.style">Github repo</a></button>
+            <button class="btn-flash btn-lg btn-no-outline btn-success"><a class="title__btn_down" target="_blank" href="http://btn.umount.space/public/css/btnStyle.min.css" download="btnStyle.min.css">Download (min 9 kb)</a></button>
+          </div>
+        </div>
+      </div>
+      <header class="head">
+        <div class="head__colors">
+          <div class="color">
+            <div class="color__text">Colors:</div>
+                        <button class="color__chooser color__chooser_danger" id="color_danger"><span>Danger</span></button>
+                        <button class="color__chooser color__chooser_primary" id="color_primary"><span>Primary</span></button>
+                        <button class="color__chooser color__chooser_warning" id="color_warning"><span>Warning</span></button>
+                        <button class="color__chooser color__chooser_success" id="color_success"><span>Success</span></button>
+                        <button class="color__chooser color__chooser_royal" id="color_royal"><span>Royal</span></button>
+                        <button class="color__chooser color__chooser_fashion" id="color_fashion"><span>Fashion</span></button>
+          </div>
+        </div>
+        <div class="head__sizes">
+          <div class="size">
+            <div class="size__text">Sizes:</div>
+                        <button class="size__chooser" id="size_sm">SM<span>Small</span></button>
+                        <button class="size__chooser" id="size_md">MD<span>Medium</span></button>
+                        <button class="size__chooser" id="size_lg">LG<span>Large</span></button>
+          </div>
+        </div>
+        <div class="head__options">
+          <div class="option">
+            <div class="option__text">Options:</div>
+            <div class="option__checkbox">
+              <label class="option__switcher" for="blockBtn">
+                <input type="checkbox" id="blockBtn">
+                <div class="option__switcher_indicator"></div><span>Block Button</span>
+              </label>
+              <label class="option__switcher" for="outlineBtn">
+                <input type="checkbox" id="outlineBtn">
+                <div class="option__switcher_indicator"></div><span>Outline</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="wrapper__main">
+                <div class="card">
+                  <div class="card__title"><span>Float Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-float">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-float</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Stretch Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-stretch">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-stretch</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Tight Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-tight">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-tight</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Slice #1 Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-slice1">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-slice1</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Slice #2 Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-slice2">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-slice2</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Slice #3 Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-slice3">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-slice3</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Round Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-round">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-round</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Fill Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-fill">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-fill</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Arial Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-arial">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-arial</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Menu Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-menu"><i class="fa fa-bars"></i> <span></span></button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-menu</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Icon Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-icon">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-icon</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+                <div class="card">
+                  <div class="card__title"><span>Flash Button</span>
+                    <hr class="title__hr">
+                  </div>
+                  <div class="card__btn">
+                    <button class="btn btn-danger btn-md btn-no-outline btn-flash">Medium</button>
+                  </div>
+                  <div class="card__desc"><span class="desc__text" style="border-left: 3px solid #f15c5c; padding-left: 10px;">.btn-flash</span></div>
+                  <div class="card__copy"><a class="card__copy_cloud mdi mdi-cloud-download mdi-24px" href="#" title="Copy to clipboard"></a></div>
+                </div>
+        <div class="copyMsg">Copy successfully</div>
+      </div>
+      <footer class="footer">
+        <input class="footer__select">
+        <div class="footer__social"><a class="footer__social_telegram mdi mdi-telegram mdi-36px mdi-light" target="_blank" style="color: #2CA5E0;" href="https://t.me/smyzin"></a><a class="footer__social_github mdi mdi-github-circle mdi-36px mdi-light" target="_blank" style="color: #D5CFCF;" href="https://github.com/smyzin"></a><a class="footer__social_codepen mdi mdi-codepen mdi-36px mdi-light" target="_blank" style="color: #AFAFAF;" href="https://codepen.io/therealnorman/"></a><a class="footer__social_twitter mdi mdi-twitter mdi-36px mdi-light" target="_blank" style="color: #79BEF1;" href="https://twitter.com/therealnorman_"></a></div>
+        <div class="footer__copyright"><span class="footer__copyright_made">Made with <i class="mdi mdi-coffee mdi-18px"></i> and <i class="mdi mdi-headphones mdi-18px"></i> by <a class="footer__copyright_bio" target="_blank" href="http://umount.space/">Sergei Myzin</a></span></div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="public/js/index.js"></script>
+</html>

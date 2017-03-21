@@ -1,0 +1,100 @@
+doctype html
+html(lang='ru')
+	head
+		title='Btn.style | Stylus/CSS'
+		meta(charset='utf-8')
+		meta(name="viewport" id="viewport" content="width=320px, initial-scale=1.0, maximum-scale=1.0, user-scale=0")
+		link(rel='stylesheet' type='text/css' href='public/css/mainStyle.css')
+		link(rel='stylesheet' type='text/css' href='public/css/btnStyle.min.css')
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
+		link(rel="stylesheet", href="public/css/materialdesignicons.min.css" media="all" type="text/css")
+
+	body
+		.wrapper
+			.wrapper__title
+				.title
+					.title__text
+						h1.title__text_name btnStyle
+						h3.title__text_name Button's style for your awesome projects
+					.title__btn
+						button.btn-flash.btn-lg.btn-no-outline.btn-success
+							a.title__btn_git(target="_blank" href="https://github.com/smyzin/btn.style") Github repo
+						button.btn-flash.btn-lg.btn-no-outline.btn-success
+							a.title__btn_down(target="_blank" href="http://btn.umount.space/public/css/btnStyle.min.css" download="btnStyle.min.css") Download (min 9 kb)
+			header.head
+				.head__colors
+					.color
+						.color__text Colors:
+						-var colorBtn = [{name: 'danger', title: 'Danger'}, {name: 'primary', title: 'Primary'}, {name: 'warning', title: 'Warning'}, {name: 'success', title: 'Success'}, {name: 'royal', title: 'Royal'}, {name: 'fashion', title: 'Fashion'}];
+							mixin chooseColor(button)
+								button.color__chooser(class="color__chooser_"+button.name+"" id="color_"+button.name+"") #[span= button.title]
+						for button in colorBtn
+							+chooseColor(button)
+				.head__sizes
+					.size
+						.size__text Sizes:
+						-var sizeBtn = [{name: 'sm', title: 'Small'}, {name: 'md', title: 'Medium'}, {name: 'lg', title: 'Large'}];
+							mixin chooseSize(button)
+								button.size__chooser(id="size_"+button.name+"")= button.name.toUpperCase()
+									span= button.title
+						for button in sizeBtn
+							+chooseSize(button)
+				.head__options
+					.option
+						.option__text Options:
+						.option__checkbox
+							label(for='blockBtn').option__switcher
+								input(type="checkbox" id="blockBtn")
+								.option__switcher_indicator
+								span Block Button
+							label(for='outlineBtn').option__switcher
+								input(type="checkbox" id="outlineBtn")
+								.option__switcher_indicator
+								span Outline
+
+			.wrapper__main
+				-var cardsList = [{title: 'Float Button', class: 'btn-float', setIcon: false}, {title: 'Stretch Button', class: 'btn-stretch', setIcon: false}, {title: 'Tight Button', class: 'btn-tight', setIcon: false}, {title: 'Slice #1 Button', class: 'btn-slice1', setIcon: false}, {title: 'Slice #2 Button', class: 'btn-slice2', setIcon: false}, {title: 'Slice #3 Button', class: 'btn-slice3', setIcon: false}, {title: 'Round Button', class: 'btn-round', setIcon: false}, {title: 'Fill Button', class: 'btn-fill', setIcon: false}, {title: 'Arial Button', class: 'btn-arial', setIcon: false}, {title: 'Menu Button', class: 'btn-menu', setIcon: true, icon: 'fa fa-bars', text: ''}, {title: 'Icon Button', class: 'btn-icon', setIcon: false}, {title: 'Flash Button', class: 'btn-flash', setIcon: false}];
+					mixin renderCard(card)
+						.card
+							.card__title
+								span= card.title
+								hr.title__hr
+							.card__btn
+								button.btn.btn-danger.btn-md.btn-no-outline(class=card.class) Medium
+							.card__desc
+									span.desc__text(style="border-left: 3px solid #f15c5c; padding-left: 10px;")= "." + card.class
+							.card__copy
+								a.card__copy_cloud.mdi.mdi-cloud-download.mdi-24px(href="#" title="Copy to clipboard")
+					mixin renderCardIcon(card)
+						.card
+							.card__title
+								span= card.title
+								hr.title__hr
+							.card__btn
+								button.btn.btn-danger.btn-md.btn-no-outline(class=card.class) #[i(class=card.icon)] #[span= card.text]
+							.card__desc
+									span.desc__text(style="border-left: 3px solid #f15c5c; padding-left: 10px;")= "." + card.class
+							.card__copy
+								a.card__copy_cloud.mdi.mdi-cloud-download.mdi-24px(href="#" title="Copy to clipboard")
+				for card in cardsList
+					if(card.setIcon)
+						+renderCardIcon(card)
+					else
+						+renderCard(card)
+				.copyMsg Copy successfully
+
+			footer.footer
+				input.footer__select
+				.footer__social
+					a.footer__social_telegram.mdi.mdi-telegram.mdi-36px.mdi-light(target="_blank" style="color: #2CA5E0;" href="https://t.me/smyzin")
+					a.footer__social_github.mdi.mdi-github-circle.mdi-36px.mdi-light(target="_blank" style="color: #D5CFCF;" href="https://github.com/smyzin")
+					a.footer__social_codepen.mdi.mdi-codepen.mdi-36px.mdi-light(target="_blank" style="color: #AFAFAF;" href="https://codepen.io/therealnorman/")
+					a.footer__social_twitter.mdi.mdi-twitter.mdi-36px.mdi-light(target="_blank" style="color: #79BEF1;" href="https://twitter.com/therealnorman_")
+				.footer__copyright
+					span.footer__copyright_made Made with #[i.mdi.mdi-coffee.mdi-18px] and #[i.mdi.mdi-headphones.mdi-18px] by #[a.footer__copyright_bio(target="_blank" href="http://umount.space/") Sergei Myzin]
+
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+	script(src="public/js/index.js")
+
+
+

@@ -1,0 +1,15 @@
+{
+  "name": "btn.style",
+  "version": "1.0.0",
+  "description": "This is a short button's liberary for your projects",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TheRealNorman (SM)",
+  "license": "MIT"
+}
