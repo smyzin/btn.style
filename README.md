@@ -1,10 +1,33 @@
 # btn.style
+> Awesome buttons for your project
+
 ***
-Button styles for your projects - webSite.url
+Add awesome buttons by including css file into your project and insert css classes to make magic come true.
 
-### [Demo](http://codepen.io/therealnorman/full/evvrqX/) | [Not finished article](#)
+[![demo](http://i.imgur.com/EC9Oe7L.jpg)](http://i.imgur.com/EC9Oe7L.jpg)
 
-[![demo](http://i.imgur.com/YTzuJo0.jpg)](http://i.imgur.com/YTzuJo0.jpg)
+### [Demo](http://btn-style.surge.sh/)
+
+## Install
+
+#### CDN - [cdnjs](https://cdnjs.com/libraries/)
+```
+There is no CDN link at this moment
+```
+
+#### CSS File
+Just add css file into your project and specify `<link>` tag in HEAD with path to btnStyle library.
+```
+<link type="text/css" src="./dist/btnStyle.min.css"/>
+```
+
+## Usage
+
+Include `btnStyle.min.css` in head of your html file and start using btn CSS classes in your button.
+
+```
+<button class="btn btn-danger btn-md btn-no-outline btn-tight">Medium</button>
+```
 
 #### Button style classes
 
@@ -17,30 +40,38 @@ Button styles for your projects - webSite.url
  - `btn-round`
  - `btn-fill`
  - `btn-arial`
+ - `btn-menu`
+ - `btn-icon`
+ - `btn-flash`
 
-### Install
+#### Button color classes
 
-#### CDN - [cdnjs](https://cdnjs.com/libraries/)
-```
-There is no CDN link at this moment
-```
+ - `btn-danger` [![Danger](http://i.imgur.com/moB8ydm.jpg)](http://i.imgur.com/moB8ydm.jpg)
+ - `btn-primary` [![Primary](http://i.imgur.com/Cnw8i6x.jpg)](http://i.imgur.com/Cnw8i6x.jpg)
+ - `btn-warning` [![Warning](http://i.imgur.com/gkpMu0o.jpg)](http://i.imgur.com/gkpMu0o.jpg)
+ - `btn-success` [![Success](http://i.imgur.com/M0wwioi.jpg)](http://i.imgur.com/M0wwioi.jpg)
+ - `btn-royal` [![Royal](http://i.imgur.com/5mGbvmn.jpg)](http://i.imgur.com/5mGbvmn.jpg)
+ - `btn-fashion` [![Fashion](http://i.imgur.com/PXsCS6S.jpg)](http://i.imgur.com/PXsCS6S.jpg)
 
-#### CSS File
-```
-<link type="text/css" src="./dist/btnStyle.min.css"/>
-```
+#### Button size classes
 
-### Usage
+ - `btn-sm` Small
+ - `btn-md` Medium
+ - `btn-lg` Large
 
-Include `btnStyle.min.css` in head of your html file and start using bttn CSS classes in your button.
+#### Button helper classes
 
-```
-<button class="btn-round btn-md"></button>
-```
+ - `btn-block` Display block button
+ - `btn-no-outline` Don't show outline
 
-## TODO List
+### TODO List
 
- - Add more size classes | *High*
- - Add color classes | *Medium*
+ - ~~Add sm/lg size classes | *High*~~
+ - ~~Add color classes | *High*~~
  - Add more classes | *Medium*
  - Test on older version of the browsers | *Low*
+
+## Meta
+Sergei Myzin – Twitter: [@therealnorman_](https://twitter.com/therealnorman_) – Email: realnorman.sm@gmail.com
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
