@@ -6,7 +6,7 @@ Add awesome buttons by including css file into your project and insert css class
 
 [![demo](http://i.imgur.com/EC9Oe7L.jpg)](http://i.imgur.com/EC9Oe7L.jpg)
 
-### [Demo](http://btn-style.surge.sh/)
+### [Demo](http://btn.umount.space/)
 
 ## Install
 
