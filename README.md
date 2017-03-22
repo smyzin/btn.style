@@ -4,7 +4,7 @@
 ***
 Add awesome buttons by including css file into your project and insert css classes to make magic come true.
 
-[![demo](http://i.imgur.com/EC9Oe7L.jpg)](http://i.imgur.com/EC9Oe7L.jpg)
+![demo](https://raw.githubusercontent.com/smyzin/btn.style/master/public/img/demo_buttons.png)
 
 ### [Demo](http://btn.umount.space/) | [Medium article](https://goo.gl/SQGfl9)
 
